@@ -2,7 +2,7 @@
 
 namespace Kravinskiy\LaravelChassis\Models;
 
-abstract class Model
+abstract class Model extends \Illuminate\Database\Eloquent\Model
 {
 
 }
