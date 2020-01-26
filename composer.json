@@ -27,6 +27,7 @@
       "Kravinskiy\\Chassis\\": "src/"
     }
   },
+  "minimum-stability": "dev",
   "extra": {
     "laravel": {
     }
