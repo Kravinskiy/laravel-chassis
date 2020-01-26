@@ -17,14 +17,14 @@
   ],
   "require": {
     "php": "^7.1",
-    "laravel/framework": "5.8.*"
+    "laravel/framework": "^6.2"
   },
   "suggest": {
     "illuminate/database": "If you want to use the database migration schema classes for event store and snapshot"
   },
   "autoload": {
     "psr-4": {
-      "Kravinskiy\\Chassis\\": "src/"
+      "Kravinskiy\\LaravelChassis\\": "src/"
     }
   },
   "minimum-stability": "dev",
