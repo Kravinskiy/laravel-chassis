@@ -1,0 +1,34 @@
+{
+  "name": "kravinskiy/laravel-chassis",
+  "description": "Laravel package to get started with application development with standardized responses, abstract controllers and services",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "homepage": "http://getprooph.org",
+  "authors": [
+    {
+      "name": "Mark Kravinskiy",
+      "email": "mark@kravinskiy.com",
+      "homepage": "http://kravinskiy.com/"
+    }
+  ],
+  "keywords": [
+    "laravel",
+    "package"
+  ],
+  "require": {
+    "php": "^7.1",
+    "laravel/framework": "5.8.*"
+  },
+  "suggest": {
+    "illuminate/database": "If you want to use the database migration schema classes for event store and snapshot"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kravinskiy\\Chassis\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+    }
+  }
+}
