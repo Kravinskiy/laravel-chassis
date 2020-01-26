@@ -3,19 +3,19 @@
 namespace Kravinskiy\LaravelChassis\Repositories\Chassis;
 
 use Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotGetEntityException;
-use Kravinskiy\LaravelChassis\Models\Chassis\DatabaseModel;
 use Exception;
 use Kravinskiy\LaravelChassis\Exceptions\Exception as ChassisException;
+use Kravinskiy\LaravelChassis\Models\ModelInterface;
 
 abstract class AbstractBaseGetRepository extends AbstractBaseRepository
 {
     /**
      * @param string $id
-     * @return DatabaseModel|null
+     * @return ModelInterface|null
      * @throws CanNotGetEntityException
      * @throws ChassisException
      */
-    public function handle(string $id): ?DatabaseModel
+    public function handle(string $id): ?ModelInterface
     {
         try {
             return $this->getModel()::find($id);

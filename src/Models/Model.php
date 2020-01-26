@@ -2,7 +2,7 @@
 
 namespace Kravinskiy\LaravelChassis\Models;
 
-abstract class Model extends \Illuminate\Database\Eloquent\Model
+abstract class Model extends \Illuminate\Database\Eloquent\Model implements ModelInterface
 {
 
 }
