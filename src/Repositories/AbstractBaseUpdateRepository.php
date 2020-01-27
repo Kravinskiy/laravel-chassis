@@ -1,6 +1,6 @@
 <?php
 
-namespace Kravinskiy\LaravelChassis\Repositories\Chassis;
+namespace Kravinskiy\LaravelChassis\Repositories;
 
 use Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotGetEntityException;
 use Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotUpdateEntityException;
@@ -8,7 +8,7 @@ use Kravinskiy\LaravelChassis\Models\Model;
 use Exception;
 use Kravinskiy\LaravelChassis\Exceptions\Exception as ChassisException;
 
-abstract class AbstractBaseUpdateRepository extends AbstractBaseRepositor
+abstract class AbstractBaseUpdateRepository extends AbstractBaseRepository
 {
     /**
      * @param string $id

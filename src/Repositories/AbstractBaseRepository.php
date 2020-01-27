@@ -1,6 +1,6 @@
 <?php
 
-namespace Kravinskiy\LaravelChassis\Repositories\Chassis;
+namespace Kravinskiy\LaravelChassis\Repositories;
 
 use Kravinskiy\LaravelChassis\Models\ModelInterface;
 
