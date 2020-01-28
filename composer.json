@@ -31,8 +31,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Kravinskiy\\LaravelChassis\\AppServiceProvider",
-        "Kravinskiy\\LaravelChassis\\RouteServiceProvider"
+        "Kravinskiy\\LaravelChassis\\Providers\\AppServiceProvider",
+        "Kravinskiy\\LaravelChassis\\Providers\\RouteServiceProvider"
       ]
     }
   }
