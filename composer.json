@@ -30,6 +30,11 @@
   "minimum-stability": "dev",
   "extra": {
     "laravel": {
+      "providers": [
+        "Kravinskiy\\LaravelChassis\\AppServiceProvider",
+        "Kravinskiy\\LaravelChassis\\RouteServiceProvider"
+      ]
     }
+  },
   }
 }
