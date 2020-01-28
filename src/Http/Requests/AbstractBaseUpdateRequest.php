@@ -10,7 +10,7 @@ abstract class AbstractBaseUpdateRequest extends AbstractBaseRequest
     public function rules(): array
     {
         return [
-            'id' => 'required|uuid'
+            'id' => 'required|integer'
         ];
     }
 }
