@@ -2,7 +2,6 @@
 
 namespace Kravinskiy\LaravelChassis\Exceptions\Entity;
 
-
 use Kravinskiy\LaravelChassis\Exceptions\Exception as StandardException;
 use Kravinskiy\LaravelChassis\Models\Reason\EntityReason;
 use Kravinskiy\LaravelChassis\Models\Reason\Reason;

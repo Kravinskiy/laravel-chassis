@@ -1,23 +1,23 @@
 <?php
 
-namespace App\Services\Chassis;
+namespace Kravinskiy\LaravelChassis\Services;
 
-use App\Exceptions\Entity\EntityNotFoundException;
-use App\Models\Chassis\DatabaseModel;
-use App\Repositories\Chassis\AbstractBaseUpdateRepository;
+use Kravinskiy\LaravelChassis\Exceptions\Entity\EntityNotFoundException;
+use Kravinskiy\LaravelChassis\Models\Model;
+use Kravinskiy\LaravelChassis\Repositories\AbstractBaseUpdateRepository;
 
 abstract class AbstractBaseUpdateService extends AbstractBaseService
 {
     /**
      * @param string $id
      * @param array $data
-     * @return DatabaseModel
+     * @return Model
      * @throws EntityNotFoundException
-     * @throws \App\Exceptions\Entity\CanNotGetEntityException
-     * @throws \App\Exceptions\Entity\CanNotUpdateEntityException
-     * @throws \App\Exceptions\Exception
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotGetEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotUpdateEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Exception
      */
-    public function handle(string $id, array $data) : DatabaseModel
+    public function handle(string $id, array $data) : Model
     {
         /** @var AbstractBaseUpdateRepository $repository */
         $repository = $this->getRepository();

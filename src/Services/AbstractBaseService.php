@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Chassis;
+namespace Kravinskiy\LaravelChassis\Services;
 
-use App\Repositories\Chassis\AbstractBaseRepository;
+use Kravinskiy\LaravelChassis\Repositories\AbstractBaseRepository;
 
 /**
  * @method handle()

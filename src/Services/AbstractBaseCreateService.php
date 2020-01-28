@@ -1,16 +1,18 @@
 <?php
 
-namespace App\Services\Chassis;
+namespace Kravinskiy\LaravelChassis\Services;
 
-use App\Repositories\Chassis\AbstractBaseCreateRepository;
+use Kravinskiy\LaravelChassis\Repositories\AbstractBaseCreateRepository;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class AbstractBaseCreateService extends AbstractBaseService
 {
+
     /**
      * @param array $data
      * @return Model
-     * @throws \App\Exceptions\Entity\CanNotCreateEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotCreateEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Exception
      */
     public function handle(array $data): Model
     {

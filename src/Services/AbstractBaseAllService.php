@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Services\Chassis;
+namespace Kravinskiy\LaravelChassis\Services;
 
-use App\Repositories\Chassis\AbstractBaseAllRepository;
+use Kravinskiy\LaravelChassis\Repositories\AbstractBaseAllRepository;
 use Illuminate\Support\Collection;
 
 abstract class AbstractBaseAllService extends AbstractBaseService
 {
     /**
      * @return Collection
-     * @throws \App\Exceptions\Entity\CanNotGetEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotGetEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Exception
      */
     public function handle(): Collection
     {

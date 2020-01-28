@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Services\Chassis;
+namespace Kravinskiy\LaravelChassis\Services;
 
-use App\Repositories\Chassis\AbstractBaseDeleteRepository;
+use Kravinskiy\LaravelChassis\Repositories\AbstractBaseDeleteRepository;
 
 abstract class AbstractBaseDeleteService extends AbstractBaseService
 {
     /**
      * @param string $id
      * @return int
-     * @throws \App\Exceptions\Entity\CanNotDeleteEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotDeleteEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Exception
      */
     public function handle(string $id)
     {

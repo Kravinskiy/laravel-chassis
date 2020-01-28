@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Services\Chassis;
+namespace Kravinskiy\LaravelChassis\Services;
 
-use App\Exceptions\Entity\EntityNotFoundException;
-use App\Models\Chassis\DatabaseModel;
-use App\Repositories\Chassis\AbstractBaseGetRepository;
+use Kravinskiy\LaravelChassis\Exceptions\Entity\EntityNotFoundException;
+use Kravinskiy\LaravelChassis\Models\ModelInterface;
+use Kravinskiy\LaravelChassis\Repositories\AbstractBaseGetRepository;
 
 abstract class AbstractBaseGetService extends AbstractBaseService
 {
     /**
      * @param string $id
-     * @return DatabaseModel
+     * @return ModelInterface
      * @throws EntityNotFoundException
-     * @throws \App\Exceptions\Entity\CanNotGetEntityException
-     * @throws \App\Exceptions\Exception
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Entity\CanNotGetEntityException
+     * @throws \Kravinskiy\LaravelChassis\Exceptions\Exception
      */
-    public function handle(string $id): DatabaseModel
+    public function handle(string $id): ModelInterface
     {
         /**
          * @var AbstractBaseGetRepository $repository

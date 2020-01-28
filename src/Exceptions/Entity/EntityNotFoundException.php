@@ -11,12 +11,11 @@ class EntityNotFoundException extends StandardException
 {
     /**
      * EntityNotFoundException constructor.
-     * @param \Exception $exception
      * @throws StandardException
      */
-    public function __construct(\Exception $exception)
+    public function __construct()
     {
-        $message = Message::fromString($exception->getMessage());
+        $message = Message::fromString('Entity Not Found');
         parent::__construct($message);
 
         $reason = Reason::fromString(EntityReason::ENTITY_GET_FAILURE);
