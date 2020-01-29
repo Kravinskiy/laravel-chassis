@@ -28,7 +28,8 @@ class Reason extends AbstractReason
     {
         return array_merge(
             self::REASONS,
-            HttpReason::all()
+            HttpReason::all(),
+            EntityReason::all()
         );
     }
 }
