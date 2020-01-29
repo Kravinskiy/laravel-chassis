@@ -105,7 +105,7 @@ class Handler extends ExceptionHandler
     private function handleExceptionWithStandardResponse(Request $request, Exception $exception): ?Response
     {
         // Only if not in debug mode
-        if (config('app.debug') === false) {
+        if (config('app.debug') === true) {
             return null;
         }
 
